@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-TW" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>阿都蘭蘭</title>
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+	<style>
+		/*圖片呈現*/
+		.carousel-inner img {
+			width:100%;
+			height:100%;
+		}
+		body {
+			position: relative;
+		}
+		ul.nav-pills {
+			top: 20px;
+			position: fixed;
+		}
+		div.col-8 div {
+			height: 500px;
+		}
+		.slidein {
+			animation-duration: 1s;
+			animation-name: slidein;
+		}
+		@keyframes slidein {
+			from {
+				padding-left: 100%;
+				width: 300%;
+			}
+
+			to {
+				padding-left: 0%;
+				width: 100%;
+			}
+		}
+		@media (min-width:576px){
+			.jumbotron{
+				padding:1rem 2rem
+			}
+		}
+		</style>
+</head>
+<body  style="height:1500px"  data-spy="scroll" data-target="#myScrollspy" data-offset="60" background="img/bg.png">
+	<!--LOGO-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+		<a class="navbar-brand" href="index.html">HOME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="landscape.html">都蘭景觀</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="culture.html">都蘭文化</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<br/><br/><br/>
+	<div class="  jumbotron text-center bg-info text-white" style="margin-bottom:00;" >
+		<h1>阿都蘭蘭</h1>
+		<h3 class="slidein">A'tolan</h3>
+	</div>
+
+	<div class="container tab-pane  in active ">
+		<br />
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+			<!-- 指示符 -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+			</ul>
+
+			<!-- 輪播圖片 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/home/index1.jpg" class="img-fluid"/>
+				</div>
+				<div class="carousel-item">
+					<img src="img/home/index2.jpg" class="img-fluid"/>
+				</div>
+			</div>
+
+			<!-- 左右切換按鈕 -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+
+		<br/><br/><br/>
+		<div class="container  col-12">
+			<div class="container  row col-12">
+				<div class="card col-lg-6  col-sm-12" style="width:400px">
+					<a href="landscape.html">
+						<img class="card-img-top shake-slow" src="img/landscape/015.jpg" alt="Card image" style="width:100%"/>
+					</a>
+					<div class="card-body">
+						<h3 class="card-title text-center">都蘭景觀</h3>
+					</div>
+				</div>
+				<div class="card col-lg-6  col-sm-12" style="width:400px">
+					<a href="culture.html">
+						<img class="card-img-top shake-slow" src="img/culture/cul2.jpg" alt="Card image" style="width:100%"/>
+					</a>
+					<div class="card-body">
+						<h3 class="card-title text-center">都蘭文化</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/><br/><br/>
+	</div>
+
+	<div class="jumbotron text-center bg-info text-white" style="margin-bottom:0">
+		<h2>都蘭國入境大廳</h2>
+		<p>
+			地址： 台東縣東河鄉224號<br/>
+			營業時間： 10:00–17:00<br/>
+			電話： 08 953 1864
+		</p>
+	</div>
+
+</body>
+</html>

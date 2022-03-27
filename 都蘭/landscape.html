@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-TW" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>都蘭景觀</title>
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+	<style>
+	/*圖片呈現*/
+	.carousel-inner img {
+		width:100%;
+		height:100%;
+	}
+	body {
+		position: relative;
+	}
+	ul.nav-pills {
+		top: 20px;
+		position: fixed;
+	}
+	div.col-8 div {
+		height: 500px;
+	}
+	.slidein {
+		animation-duration: 1s;
+		animation-name: slidein;
+	}
+	@keyframes slidein {
+		from {
+			padding-left: 100%;
+			width: 300%;
+		}
+
+		to {
+			padding-left: 0%;
+			width: 100%;
+		}
+	}
+	@media (min-width:576px){
+		.jumbotron{
+			padding:1rem 2rem
+		}
+	}
+	</style>
+</head>
+<body  style="height:1500px"  data-spy="scroll" data-target="#myScrollspy" data-offset="60" background="img/bg.png">
+	<!--LOGO-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+		<a class="navbar-brand" href="index.html">HOME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="landscape.html">都蘭景觀</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="culture.html">都蘭文化</a>
+				</li>
+			</ul>
+		</div>  
+	</nav>
+
+	<br/><br/><br/>
+	<div class="  jumbotron text-center bg-success text-white" style="margin-bottom:00;" >
+		<h1>阿都蘭蘭</h1>
+		<h3 class="slidein">都蘭景觀</h3> 
+	</div>
+
+	<div class="container tab-pane">
+		<br />
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-3 " id="myScrollspy" >
+					<ul class="nav nav-pills flex-column">
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<li class="nav-item">
+							<a class="nav-link active" href="#section1">頭目之家</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section2">都蘭糖廠</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section3">都蘭城民宿</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section4">表妹的店</a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div class="container  col-9">
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section1">
+							<img class="card-img-top" src="img/landscape/010.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">頭目之家</h3>
+								<p>
+									秉持著以共有、共享、共管原則，尊重部落意見、聆聽在地聲音，積極與當
+									地居民及社區部落以多樣深入溝通之模式建立夥伴關係，集結多數意見，共
+									同研究規劃出符合當地文化與環境的發展方向與經營管理模式。在雙方共同
+									合作下，東管處於108年完成了廢棄公路總局道班房改造工程，並由部落命名
+									為「頭目之家」。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section2">
+							<img class="card-img-top" src="img/landscape/020.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">都蘭糖廠</h3>
+								<p>
+									新東糖廠曾是臺東民間經營的紅糖製造廠，於民國80年結束營業生產後，
+									在臺東縣政府輔導下積極地轉型為「都蘭紅糖文化園區」，將閒置空間轉化
+									為藝術家合力經營的藝術文化園區，逐漸發展成為一個充滿藝文氣息的空間，
+									提供地方部落、文化藝術團體演出場地，這裡已成為東臺灣藝術工作者交流、
+									展演的舞台，未來還有許多可以開發及經營的空間。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section3">
+							<img class="card-img-top" src="img/landscape/007.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">都蘭城民宿</h3>
+								<p>
+									寬廣的天空如畫般蔚藍，鳥兒從遠方飛來，訴說著世界的美好，是時候提起行囊，
+									展開旅程吧！歡迎來到這處寧靜溫暖的小鎮，歡迎來到台東「都蘭城」民宿。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section4">
+							<img class="card-img-top" src="img/landscape/013.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">表妹的店</h3>
+								<p>
+									表妹的店為承先啟後展現全新風貌，特邀知名藝術家「希巨蘇飛」帶領部落族人
+									重新打造店面，利用現代工法巧思將傳統圖紋鑲嵌在空間中，要讓來到這裡的人
+									們領略在地特有的文化之美。外觀融合在地竹材與傳統圖紋以現代工法呈現在整
+									個工坊空間，真的非常具有都蘭阿美的風格。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron text-center bg-success text-white" style="margin-bottom:0">
+		<h2>都蘭國入境大廳</h2>
+		<p>
+			地址： 台東縣東河鄉224號<br/>
+			營業時間： 10:00–17:00<br/>
+			電話： 08 953 1864
+		</p>
+	</div>
+</body>
+</html>

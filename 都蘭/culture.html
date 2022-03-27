@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-TW" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>都蘭文化</title>
+	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+	<style>
+	/*圖片呈現*/
+	.carousel-inner img {
+		width:100%;
+		height:100%;
+	}
+	body {
+		position: relative;
+	}
+	ul.nav-pills {
+		top: 20px;
+		position: fixed;
+	}
+	div.col-8 div {
+		height: 500px;
+	}
+	.slidein {
+		animation-duration: 1s;
+		animation-name: slidein;
+	}
+	@keyframes slidein {
+		from {
+			padding-left: 100%;
+			width: 300%;
+		}
+
+		to {
+			padding-left: 0%;
+			width: 100%;
+		}
+	}
+	@media (min-width:576px){
+		.jumbotron{
+			padding:1rem 2rem
+		}
+	}
+	</style>
+</head>
+<body  style="height:1500px"  data-spy="scroll" data-target="#myScrollspy" data-offset="60" background="img/bg.png">
+	<!--LOGO-->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+		<a class="navbar-brand" href="index.html">HOME</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="landscape.html">都蘭景觀</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="culture.html">都蘭文化</a>
+				</li>
+			</ul>
+		</div>  
+	</nav>
+
+	<br/><br/><br/>
+	<div class="  jumbotron text-center bg-primary text-white" style="margin-bottom:00;" >
+		<h1>阿都蘭蘭</h1>
+		<h3 class="slidein">都蘭文化</h3> 
+	</div>
+
+	<div class="container tab-pane">
+		<br />
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="col-3 " id="myScrollspy" >
+					<ul class="nav nav-pills flex-column">
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						<li class="nav-item">
+							<a class="nav-link active" href="#section1">介紹木牌</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section2">糯米酒</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section3">月桃</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section4">都蘭天主堂</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#section5">協天宮</a>
+						</li>
+					</ul>
+				</nav>
+				
+				<div class="container  col-9">
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section1">
+							<img class="card-img-top" src="img/culture/cul1.jpg" alt="Card image" style="width:100%"/>
+							<img class="card-img-top" src="img/culture/cul3.jpg" alt="Card image" style="width:100%"/>
+							<img class="card-img-top" src="img/culture/cul4.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">介紹木牌</h3>
+								<p>
+									都蘭的新糖部落裡有很多像這種介紹性的木牌，觀光客會因為好奇心而駐足
+									於此觀看，並藉此更加了解部落儀式、文化、建築等代表的意義。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section2">
+							<img class="card-img-top" src="img/culture/cul8.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">糯米酒</h3>
+								<p>
+									在都蘭部落的料理中糯米酒取代了我們漢文化的紅標料理米酒作為醃漬肉品，
+									主要用途是去腥跟入味；同時糯米酒的香氣也令人欲罷不能，蒸餾後更是相當
+									帶勁兒的烈酒。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section3">
+							<img class="card-img-top" src="img/culture/cul17.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">月桃</h3>
+								<p>
+									月桃的香味除在飲食上大受族人歡迎之外，其莖更可以拿來編織許多生活中的
+									日常用品。他們善用地方天然資源，將自然素材作有效利用，一些時日過去，
+									開始出現大大小小的蓆子、坐墊、手提包、背包、手機袋、籃子……每一件，都
+									有月桃的身影。
+
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section4">
+							<img class="card-img-top" src="img/culture/cul11.jpg" alt="Card image" style="width:100%"/>
+							<img class="card-img-top" src="img/culture/cul12.jpg" alt="Card image" style="width:100%"/>
+							<img class="card-img-top" src="img/culture/cul15.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">都蘭天主堂</h3>
+								<p>
+									都蘭天主堂，是一座較年輕的教堂，這座教堂成立於2003年，是由傅義修士所設
+									計的教堂。一座彷若「船型」造型的教堂，延續了「諾亞方舟」的概念，意念像
+									艘大船，載著各種生物續航向更美好的未來。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+					<br/><br/><br/>
+					<div class="container  row col-12">
+						<div class="card col-12" style="width:400px" id="section5">
+							<img class="card-img-top" src="img/culture/cul13.jpg" alt="Card image" style="width:100%"/>
+							<div class="card-body">
+								<h3 class="card-title text-center">協天宮</h3>
+								<p>
+									協天宮主祀神為媽祖，原係光復初由雲林移民從麥寮拱範宮迎回，初供奉於自宅，
+									後因信徒日多，民國58年在地方人士倡議下才籌資建廟，民國74年間地方士紳及信
+									眾再度籌款重建成今之新廟。都蘭村的人口結構多為阿美族人，信仰以基督教、天
+									主教為主，故都蘭的協天宮信奉的居民自然以閩客漢族居多。
+								<p/>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>		
+				
+							
+				
+		
+	<div class="jumbotron text-center bg-primary text-white" style="margin-bottom:0">
+		<h2>都蘭國入境大廳</h2>
+		<p>
+			地址： 台東縣東河鄉224號<br/>
+			營業時間： 10:00–17:00<br/>
+			電話： 08 953 1864
+		</p>
+	</div>
+</body>
+</html>
